@@ -22,9 +22,15 @@
   justify-content: start;
   align-items: center;
   position: relative;
+  border-radius: 1rem;
+  transition: linear 0.2s;
 }
 .menu-container div:hover p{
   color: #8933bb;
+}
+.menu-container div:hover {
+  background-color: #1d1e2a;
+  box-shadow: lightgray 0.5px 0.5px 0.5px 0px;
 }
 .menu-container>div>span {
   padding: 10px;
@@ -38,6 +44,7 @@
   flex-direction: column;
   background-color: #1d1e36;
   border-radius: 1rem;
+  position: relative;
 }
 .account div{
   padding: 10px;
@@ -50,9 +57,15 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  border-radius: 1rem;
+  transition: linear 0.2s;
 }
 .account-container>div:hover p{
   color: #8933bb;
+}
+.account-container div:hover {
+  background-color: #1d1e2a;
+  box-shadow: lightgray 0.5px 0.5px 0.5px 0px;
 }
 .account-container>div>span{
   padding: 10px;
@@ -79,6 +92,12 @@
    display: flex;
   justify-content: start;
   align-items: center;
+  transition: linear 0.2s;
+  border-radius: 1rem;
+}
+.general-container div:hover {
+  background-color: #1d1e2a;
+  box-shadow: lightgray 0.5px 0.5px 0.5px 0px;
 }
 .general-container>div:hover p{
   color: #8933bb;

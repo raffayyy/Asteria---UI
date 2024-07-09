@@ -105,98 +105,68 @@ body{
    background-color: #1d1e36;
   border-radius: 1rem;
 }
-.recently-heading{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.recently-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 5px;
-  position: relative;
-}
-.initial-cards{
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width: 100%;
-  border-radius: 0.5rem;
-}
-.initial-cards.card-1{
+.main-card.f-card-1{
   background-image: url('assets/Recently-Watched/the-bad-guys.jpg');
 }
-.initial-cards.card-2{
+.main-card.f-card-2{
   background-image: url('assets/Recently-Watched/morbius.jpg');
 }
-.latter-cards{
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width: 100%;
-    border-radius: 0.5rem;
-}
-.latter-cards.card-1{
+.main-card.f-card-3{
   background-image: url('assets/Recently-Watched/hotel-transylvania.jpg');
 }
-.latter-cards.card-2{
+.main-card.f-card-4{
   background-image: url('assets/Recently-Watched/jackass-forever.jpg');
 }
-.latter-cards.card-3{
+.main-card.f-card-5{
   background-image: url('assets/Recently-Watched/the-lost-city.jpg');
 }
 
 /* BEST ARTIST */
-.best-artist{
-  grid-row: 6/7;
-  grid-column: 2/6;
-}
+
 .best-artist {
   grid-row: 6/7;
   grid-column: 2/6;
    background-color: #1d1e36;
   border-radius: 1rem;
 }
-.best-artist-heading {
+.main-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 10px;
 }
-.best-artist-container {
+.main-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 5px;
   position: relative;
 }
-.best-artists-card {
+.main-card {
   background-position: center;
   background-size: cover;
   height: 100%; 
   width: 100%;
   border-radius: 0.5rem;
 }
-.best-artists-card.card-1 {
+.main-card.b-card-1 {
   background-image: url('assets/Artists/rock-johnson.jpg');
 }
 
-.best-artists-card.card-2 {
+.main-card.b-card-2 {
   background-image: url('assets/Artists/tom-hiddleston.jpg');
 }
 
-.best-artists-card.card-3 {
+.main-card.b-card-3 {
   background-image: url('assets/Artists/chris-evans.jpg');
 }
 
-.best-artists-card.card-4 {
+.main-card.b-card-4 {
   background-image: url('assets/Artists/rdj.jpg');
 }
 
-.best-artists-card.card-5 {
+.main-card.b-card-5 {
   background-image: url('assets/Artists/tyrese-gibson.jpg');
 }
 
@@ -208,9 +178,13 @@ body{
   flex-direction: column;
   justify-content: start;
   position: relative;
+  transition: linear 0.5s;
 }
 .card-container:hover{
 transform: scale(1.1,1.1);
+}
+.card-container:hover .main-card{
+box-shadow: lightgray 2px 2px 2px 0px;
 }
 .card-title {
     text-align: center;
@@ -249,13 +223,13 @@ color: white;
   position: absolute;
   top: 5%;
   left: 5%;
+  padding-block:6px;
+  padding-inline:8px;
 }
 .rating-tags svg{
-  padding-left: 5px;
+  padding-right: 4px;
 }
-
 .rating-tags p{
-  padding: 5px;
   font-size: 0.5rem;
 }
 
