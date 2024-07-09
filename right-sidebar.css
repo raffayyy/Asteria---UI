@@ -1,0 +1,167 @@
+/* POPUPLAR MOVIES */
+.popular-movies{
+  grid-column: 6/7;
+  grid-row:1/4;
+  background-color: #1d1e36;
+  border-radius: 1rem;
+  position: relative;
+
+}
+.popular-heading{
+  padding: 10px;
+}
+.popular-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.popular-movies-card{
+  height: 180px;
+  display: flex;
+  position: relative;
+  padding: 0.5rem;
+}
+.popular-movies-card:hover{
+  transform: scale(1.1,1.1);
+}
+.popular-movies-card:hover h5{
+  color: #8933bb;
+}
+.popular-movie-image-1{
+  max-height: 100%;
+  width: 40%;
+  background-image: url('assets/Popular/black-adam.jpg');
+  background-size: cover;
+  background-position: center;
+  margin:10px;
+  border-radius: 0.5rem;
+}
+.popular-movie-image-2{
+  max-height: 100%;
+  width: 40%;
+  background-image: url('assets/Popular/umma.jpg');
+  background-size: cover;
+  background-position: center;
+  margin:10px;
+  border-radius: 0.5rem;
+}
+.popular-movie-content {
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+    position: relative;
+}
+.popular-movie-content h5{
+  font-size: 0.75rem;
+}
+.popular-movie-content p{
+  font-size: 0.5rem;
+  color: gray;
+}
+.popular-rating{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.popular-rating p{
+  color: white;
+  padding-left: 10px;
+}
+
+/* FAVORITE MOVIES */
+.favorite-movies {
+  grid-column: 6/7;
+  grid-row: 4/8;
+  background-color: #1d1e36;
+  border-radius: 1rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.favorite-heading {
+  padding: 10px;
+}
+.favourite-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.favourite-movies-card {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+.favourite-movies-card:hover{
+  transform: scale(1.1,1.1);
+}
+.favourite-movies-card:hover h5{
+  color: #8933bb;
+}
+.favorite-movie-image-1 {
+  height: 150px;
+  width: 40%;
+  background-image: url('assets/Favorite/lightyear.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  border-radius: 0.5rem;
+}
+.favorite-movie-image-2 {
+   height: 150px;
+  width: 40%;
+  background-image: url('assets/Favorite/uncharted.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  border-radius: 0.5rem;
+}
+.favorite-movie-content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30%;
+}
+.favorite-movie-content h5 {
+  font-size: 0.75rem;
+}
+.favorite-movie-content p {
+  font-size: 0.5rem;
+  color: gray;
+}
+.favorite-rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.favorite-rating p {
+  color: white;
+  padding-left: 10px;
+}
+
+/* SEE MORE */
+.see-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.see-more button{
+  background-color: #8933bb;
+  color: white;
+  padding: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 90%;
+  border: none;
+}
+.see-more button:hover{
+  background-color: white;
+  color: #8933bb;
+}

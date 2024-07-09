@@ -1,0 +1,88 @@
+
+/* MENU */
+.menu{
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: #1d1e36;
+  border-radius: 1rem;
+  position: relative;
+}
+.menu div{
+  padding: 10px;
+  position: relative;
+}
+.menu-heading{
+  font-size: 0.5;
+  color: gray;
+}
+.menu-container>div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.menu-container div:hover p{
+  color: #8933bb;
+}
+.menu-container>div>span {
+  padding: 10px;
+}
+
+/* ACCOUNT */
+.account{
+  grid-column: 1/2;
+  grid-row: 3/5;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1e36;
+  border-radius: 1rem;
+}
+.account div{
+  padding: 10px;
+}
+.account-heading{
+  font-size: 0.5;
+  color: gray;
+}
+.account-container>div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.account-container>div:hover p{
+  color: #8933bb;
+}
+.account-container>div>span{
+  padding: 10px;
+}
+
+/* GENERAL */
+.general{
+  grid-column: 1/2;
+  grid-row:5/8;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1e36;
+  border-radius: 1rem;
+  position: relative;
+}
+.general div{
+  padding: 10px;
+}
+.general-heading{
+  font-size: 0.5;
+  color: gray;
+}
+.general-container>div{
+   display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.general-container>div:hover p{
+  color: #8933bb;
+}
+.general-container>div>span{
+  padding: 10px;
+}

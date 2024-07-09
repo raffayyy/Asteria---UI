@@ -1,0 +1,262 @@
+
+@import 'navbar.css';
+@import 'left-sidebar.css';
+@import 'right-sidebar.css';
+
+
+*{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  color: white;
+}
+
+body{
+  background-color: #151433;
+  background-image: linear-gradient(to bottom right, #151433,#29124e);
+}
+
+/* MAIN GRID */
+
+.main-grid-container{
+  padding: 20px;
+}
+
+.main-grid-container{
+  display: grid;
+  grid-template-columns: 20% 14% 13% 14% 14% 20% ;
+  grid-template-rows: auto auto auto auto auto auto auto ;
+  gap: 10px;
+  padding: 1rem;
+  position: relative;
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* VIDEO */
+.trailer{
+  width: 100%;
+  grid-column: 2/6;
+  grid-row: 1/4;
+  border-radius: 1rem;
+  position: relative;
+  border-radius: 1rem;
+}
+.trailer video{
+  border-radius: 1rem;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  left: 43%;
+}
+.btn button{
+  background-color: red;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+}
+.movie{
+  padding-inline: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+  left: 1%;
+}
+.tag{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.rating-tag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282834b9;
+  border-radius: 0.5rem;
+  margin-top: 5px;
+}
+.rating-tag p{
+  /* padding: 5px; */
+  padding-block:4px;
+  padding-inline:8px;
+
+  font-size: 0.5rem;
+} 
+.rating-tag svg{
+  padding-left: 5px;
+}
+
+
+/* RECENTLY WATCHED */
+.recently-watched{
+  grid-row: 4/6;
+  grid-column: 2/6;
+  position: relative;
+   background-color: #1d1e36;
+  border-radius: 1rem;
+}
+.recently-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.recently-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  position: relative;
+}
+.initial-cards{
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.initial-cards.card-1{
+  background-image: url('assets/Recently-Watched/the-bad-guys.jpg');
+}
+.initial-cards.card-2{
+  background-image: url('assets/Recently-Watched/morbius.jpg');
+}
+.latter-cards{
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+    border-radius: 0.5rem;
+}
+.latter-cards.card-1{
+  background-image: url('assets/Recently-Watched/hotel-transylvania.jpg');
+}
+.latter-cards.card-2{
+  background-image: url('assets/Recently-Watched/jackass-forever.jpg');
+}
+.latter-cards.card-3{
+  background-image: url('assets/Recently-Watched/the-lost-city.jpg');
+}
+
+/* BEST ARTIST */
+.best-artist{
+  grid-row: 6/7;
+  grid-column: 2/6;
+}
+.best-artist {
+  grid-row: 6/7;
+  grid-column: 2/6;
+   background-color: #1d1e36;
+  border-radius: 1rem;
+}
+.best-artist-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.best-artist-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  position: relative;
+}
+.best-artists-card {
+  background-position: center;
+  background-size: cover;
+  height: 100%; 
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.best-artists-card.card-1 {
+  background-image: url('assets/Artists/rock-johnson.jpg');
+}
+
+.best-artists-card.card-2 {
+  background-image: url('assets/Artists/tom-hiddleston.jpg');
+}
+
+.best-artists-card.card-3 {
+  background-image: url('assets/Artists/chris-evans.jpg');
+}
+
+.best-artists-card.card-4 {
+  background-image: url('assets/Artists/rdj.jpg');
+}
+
+.best-artists-card.card-5 {
+  background-image: url('assets/Artists/tyrese-gibson.jpg');
+}
+
+/* COMMON STYLES */
+.card-container{
+  height: 200px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+}
+.card-container:hover{
+transform: scale(1.1,1.1);
+}
+.card-title {
+    text-align: center;
+    font-size: 0.75rem;
+    color: white;
+    margin-top: 5px;
+
+   display: block;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   word-wrap: break-word;
+   overflow: hidden;
+}
+.card-container:hover .card-title{
+  color: #8933bb;
+  overflow: visible;
+   white-space: wrap;
+
+}
+
+.see-all a{
+  color:#8933bb;
+  text-decoration: none;
+}
+.see-all:hover a{
+color: white;
+}
+
+.rating-tags{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #282834b9;
+  border-radius: 1rem;
+  width: 30%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.rating-tags svg{
+  padding-left: 5px;
+}
+
+.rating-tags p{
+  padding: 5px;
+  font-size: 0.5rem;
+}
+
+

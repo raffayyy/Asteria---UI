@@ -1,0 +1,67 @@
+.navbar-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 1rem;
+  position: relative;
+  padding-bottom: 0;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  grid-column: 1/2;
+  justify-content: center;
+  position: relative;
+}
+.nav-flex-container{
+  display: flex;
+  align-items: center;
+  grid-column: 2/3;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.nav-flex-container a{
+  text-decoration: none;
+}
+.nav-flex-container>a div:hover{
+  color: #8933bb;
+}
+.search-bar{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.search-bar i{
+  color: #1d1e36;
+  background-color: white;
+  padding: 3.5px;
+  border: none;
+}
+.search-bar input{
+  border: none;
+  padding: 3px;
+}
+.user-profile{
+  display: flex;
+  align-items: center;
+  grid-column: 4/5;
+  justify-content: space-evenly;
+  position: relative;
+
+}
+.user-icon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.user-icon p{
+  padding-left: 5px;
+}
+.user-icon:hover p{
+  color: #8933bb;
+}
